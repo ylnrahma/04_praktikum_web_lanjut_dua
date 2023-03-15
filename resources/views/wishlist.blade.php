@@ -14,7 +14,7 @@
     @foreach($wishlist as $w)
     <tr>
         <td>{{$w->id}}</td>
-        <td>{{$w->nama}}</td>
+        <td>{{$w->nama_tempat}}</td>
         <td>{{$w->alamat}}</td>
         <td>{{$w->keterangan}}</td>
         <td>{{$w->harga}}</td>

@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class healing extends Model
 {
-    use HasFactory;
-    protected $table = 'wishlist';
+
+    protected $table = 'healing';
 }
