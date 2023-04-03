@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 @extends('layouts.app2')
 
 @section('content')
 
+=======
+>>>>>>> 14a8b56497573d756e85f4a3c211e9d87982a8db
 <p>
     Wishlist Jalan - Jalan
 </p>
@@ -24,6 +27,10 @@
         <td>{{$w->harga}}</td>
     </tr>
     @endforeach
+<<<<<<< HEAD
 </table>
 
 @endsection
+=======
+</table>
+>>>>>>> 14a8b56497573d756e85f4a3c211e9d87982a8db
