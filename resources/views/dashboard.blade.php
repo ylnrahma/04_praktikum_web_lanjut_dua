@@ -4,7 +4,7 @@
 </script>
 @endpush
 
-@extends('layout.app')
+@extends('layouts.app2')
 
 @section('content')
     

@@ -1,11 +1,23 @@
-@extends('layout.app')
+@extends('layouts.app2')
 
 @section('content')
 <div class="container">
-    <br><br>
-                <center>
-                <div class="card-header">{{ ('SELAMAT DATANG DITUGAS WEB KAMI') }}</div><br><br>
-                    <img src="dist/img/kami.jpg" alt="foto" style="width:200px"> <br><br>                     
-                </center>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    {{ __('You are logged in!') }}
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection
