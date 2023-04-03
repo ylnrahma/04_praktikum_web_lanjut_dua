@@ -2,11 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DasboardController;
-<<<<<<< HEAD
-=======
-use App\Http\Controllers\HealingController;
-use App\Http\Controllers\HomeController;
->>>>>>> 14a8b56497573d756e85f4a3c211e9d87982a8db
 use App\Http\Controllers\KuliahController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WishlistController;
@@ -22,7 +17,7 @@ use App\Http\Controllers\WishlistController;
 |
 */
 
-<<<<<<< HEAD
+
 Route::get('/', function () {
     return view('auth.login');
 });
@@ -41,11 +36,3 @@ Route::get('/home', function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-=======
-Route::get('/', [HomeController::class,'index']);
-Route::get('/home', [HomeController::class,'index']);
-Route::get('/dashboard', [DasboardController::class, 'index'])->name('dashboard');
-Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
-Route::get('/kuliah', [KuliahController::class, 'index'])->name('kuliah');
-Route::get('/wishlist', [WishlistController::class,'index'])->name('wishlist');
->>>>>>> 14a8b56497573d756e85f4a3c211e9d87982a8db
